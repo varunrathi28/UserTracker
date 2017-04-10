@@ -74,11 +74,11 @@
 				3725EC041E9B6B5E00D4EDD8 /* AppDelegate.swift */,
 				3725EC061E9B6B5E00D4EDD8 /* LocationViewController.swift */,
 				3725EC1D1E9BD21E00D4EDD8 /* ShiftListViewController.swift */,
+				3725EC1B1E9BA20800D4EDD8 /* CustomUserAnnotation.swift */,
 				3725EC081E9B6B5E00D4EDD8 /* Main.storyboard */,
 				3725EC0B1E9B6B5F00D4EDD8 /* Assets.xcassets */,
 				3725EC0D1E9B6B5F00D4EDD8 /* LaunchScreen.storyboard */,
 				3725EC101E9B6B5F00D4EDD8 /* Info.plist */,
-				3725EC1B1E9BA20800D4EDD8 /* CustomUserAnnotation.swift */,
 			);
 			path = "UserTracker-Swift";
 			sourceTree = "<group>";

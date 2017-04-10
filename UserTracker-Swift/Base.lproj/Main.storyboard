@@ -25,9 +25,10 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XJD-jq-Duh">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD9-BF-TaV">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD9-BF-TaV">
                                 <rect key="frame" x="163" y="530" width="48" height="48"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="gXz-A7-sAW"/>
                                     <constraint firstAttribute="width" secondItem="ZD9-BF-TaV" secondAttribute="height" multiplier="1:1" id="ojk-XM-7Tl"/>
                                 </constraints>
                                 <state key="normal" image="gps"/>

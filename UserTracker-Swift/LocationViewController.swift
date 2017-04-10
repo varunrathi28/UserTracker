@@ -12,6 +12,10 @@ import CoreLocation
 
 class LocationViewController: UIViewController {
 
+    
+     let kCurrentLocationIdentifier = "Current"
+     let kUserIdentifier = "user"
+    
     var startLocation:CLLocationCoordinate2D?
     var endLocation:CLLocationCoordinate2D?
     var locationManager:CLLocationManager!
@@ -26,19 +30,17 @@ class LocationViewController: UIViewController {
     var timer:Timer!
     var isStartLocation:Bool = false
     var isEndLocation:Bool = false
-    
-    var isTracking:Bool = false
 
+    var isTracking :Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpLocationManager()
         mapView.delegate = self
-      //  mapView.mapType = .satellite
+        mapView.userTrackingMode = .followWithHeading
         mapView.showsUserLocation = true
-        
         btnLocation.setImage(UIImage(named:"gps"), for: .normal)
-        
-         btnLocation.setImage(UIImage(named:"stop"), for: .selected)
+        btnLocation.setImage(UIImage(named:"stop"), for: .selected)
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -56,10 +58,10 @@ class LocationViewController: UIViewController {
     {
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
+        isTracking = true
         
         if btnLocation.isSelected == false
         {
-            isTracking = true
             btnLocation.isSelected = true
             if mapView.overlays.count > 0
             {
@@ -75,15 +77,22 @@ class LocationViewController: UIViewController {
         {
             btnLocation.isSelected = false
             isTracking = false
-            isStartLocation = false
-       //     showTrackOverlay()
-            //resetTimer()
+            let lastlocation = userPath[userPath.count - 1]
+            addAnnotation(with: lastlocation.coordinate, title: "Destination")
+            resetTimer()
             
         }
         
         
     }
-
+    
+    func addAnnotation(with location:CLLocationCoordinate2D ,title :String)
+    {
+      let annotation = CustomUserAnnotation(coordinate: location, title: title)
+      mapView.addAnnotation(annotation)
+        
+     }
+    
     func startTimer()
     {
        
@@ -112,10 +121,10 @@ class LocationViewController: UIViewController {
     {
         
         locationManager = CLLocationManager()
-        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
         locationManager.activityType = .automotiveNavigation
-        locationManager.distanceFilter = 10
+        locationManager.distanceFilter = 5
         
         // Check location Authorization, and if not ask for Authorized when in use, as it drains less amount of battery
         
@@ -136,15 +145,6 @@ class LocationViewController: UIViewController {
         mapView.setRegion(coordinateRegion, animated: true)
         
     }
-    
-    func showTrackOverlay()
-    {
-        let region = mapRegion()
-        let polylines = polyline()
-        mapView.setRegion(region, animated: true)
-        mapView.add(polylines)
-    }
-    
     
     // MARK: - Utility Functions
     
@@ -204,16 +204,14 @@ extension LocationViewController:CLLocationManagerDelegate
             {
                 isStartLocation = true
                 startLocation = location
-                
-                var startAnnotation:CustomUserAnnotation?
-                
                 let location:CLLocation? = locations[0]
                 
                 if let location = location
                 {
-                    startAnnotation = CustomUserAnnotation(coordinate: location.coordinate, title: "Start")
+                  addAnnotation(with: location.coordinate, title: "Start")
+                    userPath.append(location)
                 }
-                mapView.addAnnotation(startAnnotation!)
+               
                 centerMapOnLocation(for: location!)
             }
             else
@@ -230,7 +228,7 @@ extension LocationViewController:CLLocationManagerDelegate
                 mapView.setRegion(updatedRegion, animated: true)
                 
                 
-                if userPath.count > 1
+                if userPath.count > 1       // Extra check
                 {
                     let previousIndex = userPath.count-2
                     let currentIndex = userPath.count-1
@@ -254,9 +252,8 @@ extension LocationViewController : MKMapViewDelegate
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
        
     
-        if  overlay is MKPolyline
+        if  overlay is MKPolyline               // we are only using polyline as an overlay
         {
-            
             let renderer = MKPolylineRenderer(overlay: overlay)
             renderer.strokeColor = UIColor.blue
             renderer.lineWidth = 5.0
@@ -269,7 +266,55 @@ extension LocationViewController : MKMapViewDelegate
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
         var annotationView:MKAnnotationView?
-         annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "user")
+        
+        if annotation.isKind(of: MKUserLocation.self)
+        {
+           annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier:kCurrentLocationIdentifier
+            )
+            
+        }
+        
+//        else if let dequedAnnotation = mapView.dequeueReusableAnnotationView(withIdentifier:kUserIdentifier)
+//        {
+//            annotationView = dequedAnnotation
+//            annotationView?.annotation = annotation
+//            
+//            if isTracking == true
+//            {
+//                
+//                if isEndLocation == true               // source location
+//                {
+//                    
+//                    annotationView?.image = UIImage(named: "current-pin")
+//                }
+//                else if isStartLocation == true                               // destination location
+//                {
+//                    annotationView?.image = UIImage(named: "start-pin")
+//                }
+//            }
+//            
+//        }
+        else
+        {
+            if isTracking == true
+            {
+                
+                let newAnnotation = MKAnnotationView(annotation: annotation
+                    , reuseIdentifier: kUserIdentifier)
+                annotationView = newAnnotation
+                if isEndLocation == true               // source location
+                {
+                    
+                    annotationView?.image = UIImage(named: "current-pin")
+                }
+                else if   isStartLocation == true                             // destination location
+                {
+                    annotationView?.image = UIImage(named: "start-pin")
+                }
+                
+            }
+        }
+        
         return annotationView!
     }
     
