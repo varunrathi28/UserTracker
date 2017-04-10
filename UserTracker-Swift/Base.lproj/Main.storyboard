@@ -47,7 +47,7 @@
                             <constraint firstItem="ZD9-BF-TaV" firstAttribute="centerX" secondItem="XJD-jq-Duh" secondAttribute="centerX" id="vlc-FJ-X0q"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="5fS-Mi-fsV"/>
+                    <tabBarItem key="tabBarItem" title="Map" selectedImage="map-tabbar" id="5fS-Mi-fsV"/>
                     <connections>
                         <outlet property="btnLocation" destination="ZD9-BF-TaV" id="mIf-Kk-uEo"/>
                         <outlet property="mapView" destination="XJD-jq-Duh" id="FPk-Jz-HFv"/>
@@ -119,6 +119,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gps" width="48" height="48"/>
+        <image name="gps" width="96" height="96"/>
+        <image name="map-tabbar" width="30" height="30"/>
     </resources>
 </document>
