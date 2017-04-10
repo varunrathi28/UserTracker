@@ -38,7 +38,7 @@ class LocationViewController: UIViewController {
         
         btnLocation.setImage(UIImage(named:"gps"), for: .normal)
         
-         btnLocation.setImage(UIImage(named:"Stop"), for: .selected)
+         btnLocation.setImage(UIImage(named:"stop"), for: .selected)
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -226,7 +226,7 @@ extension LocationViewController:CLLocationManagerDelegate
                 let spanX = 0.007
                 let spanY = 0.007
                 
-                var updatedRegion = MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpanMake(spanX, spanY))
+                let updatedRegion = MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpanMake(spanX, spanY))
                 mapView.setRegion(updatedRegion, animated: true)
                 
                 
@@ -238,7 +238,7 @@ extension LocationViewController:CLLocationManagerDelegate
                     let coord2 = userPath[previousIndex].coordinate
                     
                     var array = [coord1, coord2]
-                    var polyline = MKPolyline(coordinates: &array, count: array.count)
+                    let polyline = MKPolyline(coordinates: &array, count: array.count)
                     mapView.add(polyline)
                 }
                 
