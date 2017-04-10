@@ -7,5 +7,5 @@ target 'UserTracker-Swift' do
 
   # Pods for UserTracker-Swift
 pod 'Polyline', '~> 4.0'
-
+pod 'TTGSnackbar'
 end

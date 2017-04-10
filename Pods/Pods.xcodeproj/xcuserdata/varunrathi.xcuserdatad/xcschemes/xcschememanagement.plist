@@ -14,15 +14,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TTGSnackbar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>434E45361D181941BAEAC59B590D6C40</key>
+		<key>380188226EF37A6B7F16FA60B81AA879</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>653EDF0DA97DE2BBEEF670D568B5DA00</key>
+		<key>5C0533D58620052E4858E6561ADD34A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5E764489CA70DBC8B248716B996DACC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,12 +1,15 @@
 PODS:
   - Polyline (4.0.0)
+  - TTGSnackbar (1.5.1)
 
 DEPENDENCIES:
   - Polyline (~> 4.0)
+  - TTGSnackbar
 
 SPEC CHECKSUMS:
   Polyline: c6de7430bf6ff0bfff1f087343597b83b38fdb69
+  TTGSnackbar: a49b484317e0dd7205be7d7bb51842d3a30765e4
 
-PODFILE CHECKSUM: 8e19baeb6096912c4606c2b69f08f7f5dd826ea0
+PODFILE CHECKSUM: 982d580cf6cf76d22a634cd8ad9f7c03b991ccb7
 
 COCOAPODS: 1.2.0

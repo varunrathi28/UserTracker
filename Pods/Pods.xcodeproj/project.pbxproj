@@ -7,91 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02540583A571EFA3FA37001178CECDFA /* Polyline-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E23AFA0ED77977F3B66748F6B1A052 /* Polyline-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		06D3340A2CFA664CD1520828DABBE87A /* Pods-UserTracker-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B54E372E9D7C1F67CE5F4E95B03329 /* Pods-UserTracker-Swift-dummy.m */; };
-		1BCC4229F7E1D0797F2C34D648F7FDF7 /* Polyline.h in Headers */ = {isa = PBXBuildFile; fileRef = 936948AECE3BC206CE6F3BBD4BD9DDC9 /* Polyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		269F404A525F10C8EE40E94B443DBAE0 /* Polyline-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B032EB523AD76582843DA21A8F52C8 /* Polyline-dummy.m */; };
-		2A0407C843D5EC85DD5FBA898B11D902 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C060AA7D2DAD3CE3C3FDF1BF233F18CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		F15C8CE3B70D1C104ACD627ED6050E6D /* Pods-UserTracker-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C6268E99BA3AC460243509068F2D605 /* Pods-UserTracker-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBBD3EF5E36493E3BFB8D2189D30B868 /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95519802BBBBDAA16E365188A4160CF9 /* Polyline.swift */; };
+		0C0EF1393CE8F3947205FFF2B5F9EE6A /* Polyline.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A310083A71406EAAF3F6F420D33364 /* Polyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18E25FC7920574D4F4C28E68FC714BF5 /* Polyline-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1F5565FE446DF09B92D6869CB553C /* Polyline-dummy.m */; };
+		33EFA45CAA39D29BAEBEFD687AEAF7DE /* Polyline-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28734483A172315394D355AF9BA88D1D /* Polyline-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		408FA18716B589C433AAD1897B624BB7 /* Pods-UserTracker-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C6268E99BA3AC460243509068F2D605 /* Pods-UserTracker-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A899D28D8CC626FEE5D9833EF83E5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		651CC91918FC601A60808392B45768AB /* TTGSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1AF124ED4617696F3E90689A4F7210 /* TTGSnackbar.swift */; };
+		9DC7AA6B2AC18B1C1179A87FA455F7D4 /* TTGSnackbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 711F262DA6CCE1FB77FB45F17A4FDF38 /* TTGSnackbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A167C899EDFF26F49C2A09F42DAAAA09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AA15617F744DA2B494C1FD81301FE1E3 /* TTGSnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9FA436CE6432C56EDF400E4021D332 /* TTGSnackbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE3C3AB80BD9DEDF7F2CF6A175672BC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C284D2D7F0D0534DCFCF5334E71B5FCD /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56829E4549A5A357C660CCC7C4D97936 /* Polyline.swift */; };
+		C5D7B5D6A4E1166FE76933C852ABE05F /* Pods-UserTracker-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B54E372E9D7C1F67CE5F4E95B03329 /* Pods-UserTracker-Swift-dummy.m */; };
+		D40C3A1CA26554DDC777A6DED3EC2AFE /* TTGSnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E79B726A4CE14DF63FF89E6667CFB1 /* TTGSnackbar-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3D37BBD3C67E0FEFD33CF102D427CCB8 /* PBXContainerItemProxy */ = {
+		214BB83EB3130B524209E9117811DE1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 653EDF0DA97DE2BBEEF670D568B5DA00;
+			remoteGlobalIDString = 380188226EF37A6B7F16FA60B81AA879;
 			remoteInfo = Polyline;
+		};
+		A65246DBCAE53D89BCE22736DBE0218F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C0533D58620052E4858E6561ADD34A6;
+			remoteInfo = TTGSnackbar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01E79B726A4CE14DF63FF89E6667CFB1 /* TTGSnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTGSnackbar-dummy.m"; sourceTree = "<group>"; };
 		0A57D727968F29221B12CCC2F1E0D16F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E7510106908F913EB5AEE20D88CEA7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20B54E372E9D7C1F67CE5F4E95B03329 /* Pods-UserTracker-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UserTracker-Swift-dummy.m"; sourceTree = "<group>"; };
+		28734483A172315394D355AF9BA88D1D /* Polyline-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-umbrella.h"; sourceTree = "<group>"; };
 		3F09ECEDF7A7758E7F3AA17C8F51DEC1 /* Pods-UserTracker-Swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UserTracker-Swift-resources.sh"; sourceTree = "<group>"; };
-		48FCE6BDEDD81F21D90C2D11037F8A35 /* Polyline.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Polyline.modulemap; sourceTree = "<group>"; };
+		45A310083A71406EAAF3F6F420D33364 /* Polyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Polyline.h; path = Polyline/Polyline.h; sourceTree = "<group>"; };
+		4BF1F5565FE446DF09B92D6869CB553C /* Polyline-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Polyline-dummy.m"; sourceTree = "<group>"; };
+		56829E4549A5A357C660CCC7C4D97936 /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Polyline/Polyline.swift; sourceTree = "<group>"; };
 		5AA60C314E4FD896C0886237C7B32019 /* Pods-UserTracker-Swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UserTracker-Swift-acknowledgements.plist"; sourceTree = "<group>"; };
 		62FC59F7E8BCD98DF93DF0BE8DE4FDA9 /* Pods-UserTracker-Swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UserTracker-Swift-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6FAE2CEC3A7A7579F968A7A13594AB93 /* Polyline-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-prefix.pch"; sourceTree = "<group>"; };
-		7D870BCCEBF9911276353E0F36C253CB /* Pods_UserTracker_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UserTracker_Swift.framework; path = "Pods-UserTracker-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BC3B4F037C08C851B19FF6B150DBB18 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711F262DA6CCE1FB77FB45F17A4FDF38 /* TTGSnackbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGSnackbar-umbrella.h"; sourceTree = "<group>"; };
+		7E9FA436CE6432C56EDF400E4021D332 /* TTGSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGSnackbar.h; path = TTGSnackbar/TTGSnackbar.h; sourceTree = "<group>"; };
+		80EACF2C10466682086A1FE7C5AD6F08 /* TTGSnackbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGSnackbar.xcconfig; sourceTree = "<group>"; };
 		8C6268E99BA3AC460243509068F2D605 /* Pods-UserTracker-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UserTracker-Swift-umbrella.h"; sourceTree = "<group>"; };
-		936948AECE3BC206CE6F3BBD4BD9DDC9 /* Polyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Polyline.h; path = Polyline/Polyline.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9423DC9B0E1D07BE4F84BF8AB96B61FB /* Pods-UserTracker-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UserTracker-Swift.debug.xcconfig"; sourceTree = "<group>"; };
-		95519802BBBBDAA16E365188A4160CF9 /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Polyline/Polyline.swift; sourceTree = "<group>"; };
+		9B0BEC039B160A9DFC72B64120916EE3 /* TTGSnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGSnackbar-prefix.pch"; sourceTree = "<group>"; };
+		9CA308B9947607448FF67F1B7B8342FD /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Polyline.framework; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE1E20EA5A2CEB6CF2A59B10FF6028B /* Pods-UserTracker-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UserTracker-Swift.release.xcconfig"; sourceTree = "<group>"; };
-		A1E23AFA0ED77977F3B66748F6B1A052 /* Polyline-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-umbrella.h"; sourceTree = "<group>"; };
-		A20C1293607316DCDDA9F63B07B28FA6 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Polyline.framework; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9B032EB523AD76582843DA21A8F52C8 /* Polyline-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Polyline-dummy.m"; sourceTree = "<group>"; };
+		ACEB49D25E869BDA2FEB157473670569 /* Polyline.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Polyline.xcconfig; sourceTree = "<group>"; };
+		B189D11922D003BBE540FE0FBF3BBED4 /* TTGSnackbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TTGSnackbar.modulemap; sourceTree = "<group>"; };
+		BB95DD9924FCDE1D04026A28711571D0 /* Polyline.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Polyline.modulemap; sourceTree = "<group>"; };
+		D229AC1E6600F6A5196588EF31AFC377 /* Pods_UserTracker_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UserTracker_Swift.framework; path = "Pods-UserTracker-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B76DE2B689F5F4A6B3C87EC14E9AA0 /* Pods-UserTracker-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UserTracker-Swift.modulemap"; sourceTree = "<group>"; };
+		DDBD3A7AB3B439D83C7CBA7659AD46C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2F0277F0102A9B24D6A25D05DD1EE9A /* Pods-UserTracker-Swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UserTracker-Swift-frameworks.sh"; sourceTree = "<group>"; };
-		F30128D7748B1B4FAC2CEB6279B09231 /* Polyline.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Polyline.xcconfig; sourceTree = "<group>"; };
+		E59CF4F158AA6F49944974F1C37D54E6 /* Polyline-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-prefix.pch"; sourceTree = "<group>"; };
+		EB1AF124ED4617696F3E90689A4F7210 /* TTGSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TTGSnackbar.swift; path = TTGSnackbar/TTGSnackbar.swift; sourceTree = "<group>"; };
+		FCFF0D97FED7BFF9D2F9923C4C36D3FD /* TTGSnackbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTGSnackbar.framework; path = TTGSnackbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		925FC689788C76DC7185768C5A2A042C /* Frameworks */ = {
+		168F8702443F91661C93B455BFB3DF7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A0407C843D5EC85DD5FBA898B11D902 /* Foundation.framework in Frameworks */,
+				A167C899EDFF26F49C2A09F42DAAAA09 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA646DF3AE98E0E5CFBCAB2FFC9DAFAF /* Frameworks */ = {
+		9F6A45981A1515A3509A2328ACADD59C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C060AA7D2DAD3CE3C3FDF1BF233F18CE /* Foundation.framework in Frameworks */,
+				BE3C3AB80BD9DEDF7F2CF6A175672BC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AADE2E12E17B8C366F8B3E3520AC4DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A899D28D8CC626FEE5D9833EF83E5E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10371C8901B94FF9B78AB397DBB51D31 /* Support Files */ = {
+		1CF81520CDCFBC242F4DCEFD2419E601 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BC3B4F037C08C851B19FF6B150DBB18 /* Info.plist */,
-				48FCE6BDEDD81F21D90C2D11037F8A35 /* Polyline.modulemap */,
-				F30128D7748B1B4FAC2CEB6279B09231 /* Polyline.xcconfig */,
-				C9B032EB523AD76582843DA21A8F52C8 /* Polyline-dummy.m */,
-				6FAE2CEC3A7A7579F968A7A13594AB93 /* Polyline-prefix.pch */,
-				A1E23AFA0ED77977F3B66748F6B1A052 /* Polyline-umbrella.h */,
+				D229AC1E6600F6A5196588EF31AFC377 /* Pods_UserTracker_Swift.framework */,
+				9CA308B9947607448FF67F1B7B8342FD /* Polyline.framework */,
+				FCFF0D97FED7BFF9D2F9923C4C36D3FD /* TTGSnackbar.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Polyline";
-			sourceTree = "<group>";
-		};
-		168ED878640F39BBAB4008563218E5B7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8D4BEA1B8828E172FB33CD250891C36F /* Polyline */,
-			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		4A7778F28083B216B92F2D2C706797AB /* Pods-UserTracker-Swift */ = {
@@ -112,35 +129,40 @@
 			path = "Target Support Files/Pods-UserTracker-Swift";
 			sourceTree = "<group>";
 		};
+		596252823F68499797AC4EF5871E2C0E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E7510106908F913EB5AEE20D88CEA7E /* Info.plist */,
+				B189D11922D003BBE540FE0FBF3BBED4 /* TTGSnackbar.modulemap */,
+				80EACF2C10466682086A1FE7C5AD6F08 /* TTGSnackbar.xcconfig */,
+				01E79B726A4CE14DF63FF89E6667CFB1 /* TTGSnackbar-dummy.m */,
+				9B0BEC039B160A9DFC72B64120916EE3 /* TTGSnackbar-prefix.pch */,
+				711F262DA6CCE1FB77FB45F17A4FDF38 /* TTGSnackbar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TTGSnackbar";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				168ED878640F39BBAB4008563218E5B7 /* Pods */,
-				9AC7340987E19A55ABCAED1EBE23DF09 /* Products */,
+				DDB0934A92F99A74676C300328784A23 /* Pods */,
+				1CF81520CDCFBC242F4DCEFD2419E601 /* Products */,
 				DCB1043984BDA155E7A2FF3423C4125D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8D4BEA1B8828E172FB33CD250891C36F /* Polyline */ = {
+		8413C7DDAD2F3706F2396632DD4AD383 /* TTGSnackbar */ = {
 			isa = PBXGroup;
 			children = (
-				936948AECE3BC206CE6F3BBD4BD9DDC9 /* Polyline.h */,
-				95519802BBBBDAA16E365188A4160CF9 /* Polyline.swift */,
-				10371C8901B94FF9B78AB397DBB51D31 /* Support Files */,
+				7E9FA436CE6432C56EDF400E4021D332 /* TTGSnackbar.h */,
+				EB1AF124ED4617696F3E90689A4F7210 /* TTGSnackbar.swift */,
+				596252823F68499797AC4EF5871E2C0E /* Support Files */,
 			);
-			name = Polyline;
-			path = Polyline;
-			sourceTree = "<group>";
-		};
-		9AC7340987E19A55ABCAED1EBE23DF09 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7D870BCCEBF9911276353E0F36C253CB /* Pods_UserTracker_Swift.framework */,
-				A20C1293607316DCDDA9F63B07B28FA6 /* Polyline.framework */,
-			);
-			name = Products;
+			name = TTGSnackbar;
+			path = TTGSnackbar;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -151,12 +173,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD365BFE0B387846333F590CECC6B38E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDBD3A7AB3B439D83C7CBA7659AD46C5 /* Info.plist */,
+				BB95DD9924FCDE1D04026A28711571D0 /* Polyline.modulemap */,
+				ACEB49D25E869BDA2FEB157473670569 /* Polyline.xcconfig */,
+				4BF1F5565FE446DF09B92D6869CB553C /* Polyline-dummy.m */,
+				E59CF4F158AA6F49944974F1C37D54E6 /* Polyline-prefix.pch */,
+				28734483A172315394D355AF9BA88D1D /* Polyline-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Polyline";
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		D604B53B20CFAA9F24190DA5CAE0E39B /* Polyline */ = {
+			isa = PBXGroup;
+			children = (
+				45A310083A71406EAAF3F6F420D33364 /* Polyline.h */,
+				56829E4549A5A357C660CCC7C4D97936 /* Polyline.swift */,
+				BD365BFE0B387846333F590CECC6B38E /* Support Files */,
+			);
+			name = Polyline;
+			path = Polyline;
 			sourceTree = "<group>";
 		};
 		DCB1043984BDA155E7A2FF3423C4125D /* Targets Support Files */ = {
@@ -167,54 +214,54 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		DDB0934A92F99A74676C300328784A23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D604B53B20CFAA9F24190DA5CAE0E39B /* Polyline */,
+				8413C7DDAD2F3706F2396632DD4AD383 /* TTGSnackbar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4F7FB29089BAC7A155A7F2D3ABFB5A78 /* Headers */ = {
+		06864F5F3CD8EA561E6577ED59D8267E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02540583A571EFA3FA37001178CECDFA /* Polyline-umbrella.h in Headers */,
-				1BCC4229F7E1D0797F2C34D648F7FDF7 /* Polyline.h in Headers */,
+				408FA18716B589C433AAD1897B624BB7 /* Pods-UserTracker-Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA2EA558473B9585B8FF4355AC972D36 /* Headers */ = {
+		83E883ADFA69FDBF2F76CDC8B24F9F45 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F15C8CE3B70D1C104ACD627ED6050E6D /* Pods-UserTracker-Swift-umbrella.h in Headers */,
+				33EFA45CAA39D29BAEBEFD687AEAF7DE /* Polyline-umbrella.h in Headers */,
+				0C0EF1393CE8F3947205FFF2B5F9EE6A /* Polyline.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D743CE434922102426A379263507E5D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC7AA6B2AC18B1C1179A87FA455F7D4 /* TTGSnackbar-umbrella.h in Headers */,
+				AA15617F744DA2B494C1FD81301FE1E3 /* TTGSnackbar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		434E45361D181941BAEAC59B590D6C40 /* Pods-UserTracker-Swift */ = {
+		380188226EF37A6B7F16FA60B81AA879 /* Polyline */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF6DAE577BEEACA6A9805410E9D21E1B /* Build configuration list for PBXNativeTarget "Pods-UserTracker-Swift" */;
+			buildConfigurationList = C8DD11E2DD94465A9B9B76E49B2D5933 /* Build configuration list for PBXNativeTarget "Polyline" */;
 			buildPhases = (
-				B0A798736DD21BF3951BB62B8F359477 /* Sources */,
-				BA646DF3AE98E0E5CFBCAB2FFC9DAFAF /* Frameworks */,
-				AA2EA558473B9585B8FF4355AC972D36 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				15AE6609A47FC139BEEAA31B2366BCCA /* PBXTargetDependency */,
-			);
-			name = "Pods-UserTracker-Swift";
-			productName = "Pods-UserTracker-Swift";
-			productReference = 7D870BCCEBF9911276353E0F36C253CB /* Pods_UserTracker_Swift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		653EDF0DA97DE2BBEEF670D568B5DA00 /* Polyline */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C51B12F006B3B1C711A57552D45A817A /* Build configuration list for PBXNativeTarget "Polyline" */;
-			buildPhases = (
-				2C5F6DE6A0C462F58A5EA94C5D528CD1 /* Sources */,
-				925FC689788C76DC7185768C5A2A042C /* Frameworks */,
-				4F7FB29089BAC7A155A7F2D3ABFB5A78 /* Headers */,
+				1F934BA5CFB4364C60F7DD9510F6173D /* Sources */,
+				9F6A45981A1515A3509A2328ACADD59C /* Frameworks */,
+				83E883ADFA69FDBF2F76CDC8B24F9F45 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -222,7 +269,43 @@
 			);
 			name = Polyline;
 			productName = Polyline;
-			productReference = A20C1293607316DCDDA9F63B07B28FA6 /* Polyline.framework */;
+			productReference = 9CA308B9947607448FF67F1B7B8342FD /* Polyline.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C0533D58620052E4858E6561ADD34A6 /* TTGSnackbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B3E855F973BF99CB9839556F465AB0C /* Build configuration list for PBXNativeTarget "TTGSnackbar" */;
+			buildPhases = (
+				F0E39C84A0ABA8F3A2B3BA5CC384EC0F /* Sources */,
+				AADE2E12E17B8C366F8B3E3520AC4DBB /* Frameworks */,
+				D743CE434922102426A379263507E5D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTGSnackbar;
+			productName = TTGSnackbar;
+			productReference = FCFF0D97FED7BFF9D2F9923C4C36D3FD /* TTGSnackbar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5E764489CA70DBC8B248716B996DACC /* Pods-UserTracker-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49593982FDC88D89381EF02AFCF91528 /* Build configuration list for PBXNativeTarget "Pods-UserTracker-Swift" */;
+			buildPhases = (
+				D4D70F6150504B7E5EB9F9A163404779 /* Sources */,
+				168F8702443F91661C93B455BFB3DF7E /* Frameworks */,
+				06864F5F3CD8EA561E6577ED59D8267E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				959E1CCA159B24D5A39E898F98DFFDC6 /* PBXTargetDependency */,
+				417109865663D3D18A41E50CFE998AFB /* PBXTargetDependency */,
+			);
+			name = "Pods-UserTracker-Swift";
+			productName = "Pods-UserTracker-Swift";
+			productReference = D229AC1E6600F6A5196588EF31AFC377 /* Pods_UserTracker_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -242,83 +325,65 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9AC7340987E19A55ABCAED1EBE23DF09 /* Products */;
+			productRefGroup = 1CF81520CDCFBC242F4DCEFD2419E601 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				434E45361D181941BAEAC59B590D6C40 /* Pods-UserTracker-Swift */,
-				653EDF0DA97DE2BBEEF670D568B5DA00 /* Polyline */,
+				F5E764489CA70DBC8B248716B996DACC /* Pods-UserTracker-Swift */,
+				380188226EF37A6B7F16FA60B81AA879 /* Polyline */,
+				5C0533D58620052E4858E6561ADD34A6 /* TTGSnackbar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C5F6DE6A0C462F58A5EA94C5D528CD1 /* Sources */ = {
+		1F934BA5CFB4364C60F7DD9510F6173D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				269F404A525F10C8EE40E94B443DBAE0 /* Polyline-dummy.m in Sources */,
-				FBBD3EF5E36493E3BFB8D2189D30B868 /* Polyline.swift in Sources */,
+				18E25FC7920574D4F4C28E68FC714BF5 /* Polyline-dummy.m in Sources */,
+				C284D2D7F0D0534DCFCF5334E71B5FCD /* Polyline.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0A798736DD21BF3951BB62B8F359477 /* Sources */ = {
+		D4D70F6150504B7E5EB9F9A163404779 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06D3340A2CFA664CD1520828DABBE87A /* Pods-UserTracker-Swift-dummy.m in Sources */,
+				C5D7B5D6A4E1166FE76933C852ABE05F /* Pods-UserTracker-Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E39C84A0ABA8F3A2B3BA5CC384EC0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40C3A1CA26554DDC777A6DED3EC2AFE /* TTGSnackbar-dummy.m in Sources */,
+				651CC91918FC601A60808392B45768AB /* TTGSnackbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		15AE6609A47FC139BEEAA31B2366BCCA /* PBXTargetDependency */ = {
+		417109865663D3D18A41E50CFE998AFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTGSnackbar;
+			target = 5C0533D58620052E4858E6561ADD34A6 /* TTGSnackbar */;
+			targetProxy = A65246DBCAE53D89BCE22736DBE0218F /* PBXContainerItemProxy */;
+		};
+		959E1CCA159B24D5A39E898F98DFFDC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Polyline;
-			target = 653EDF0DA97DE2BBEEF670D568B5DA00 /* Polyline */;
-			targetProxy = 3D37BBD3C67E0FEFD33CF102D427CCB8 /* PBXContainerItemProxy */;
+			target = 380188226EF37A6B7F16FA60B81AA879 /* Polyline */;
+			targetProxy = 214BB83EB3130B524209E9117811DE1D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B2BC8891944976A1B5FD1975EB521020 /* Release */ = {
+		191D7F8802E6EA6DAFDFEA68FC56D552 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F30128D7748B1B4FAC2CEB6279B09231 /* Polyline.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Polyline/Polyline-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Polyline/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Polyline/Polyline.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Polyline;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BA864791BD43EB1B53969DAE90AE8E3C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F30128D7748B1B4FAC2CEB6279B09231 /* Polyline.xcconfig */;
+			baseConfigurationReference = ACEB49D25E869BDA2FEB157473670569 /* Polyline.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -351,7 +416,110 @@
 			};
 			name = Debug;
 		};
-		BC5E63DABA40DB443FE89902F3BF436B /* Release */ = {
+		1EB11C9137099969B1694F28FF2374DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80EACF2C10466682086A1FE7C5AD6F08 /* TTGSnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTGSnackbar/TTGSnackbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTGSnackbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTGSnackbar/TTGSnackbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TTGSnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		325A71B58E236A0005D5F55D2D5C6AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80EACF2C10466682086A1FE7C5AD6F08 /* TTGSnackbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTGSnackbar/TTGSnackbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTGSnackbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTGSnackbar/TTGSnackbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TTGSnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6686904BB6B7271A3E95DB5359CD17FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACEB49D25E869BDA2FEB157473670569 /* Polyline.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Polyline/Polyline-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Polyline/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Polyline/Polyline.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Polyline;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA378DE046FCAB0311A7AEDFFA04F1E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DE1E20EA5A2CEB6CF2A59B10FF6028B /* Pods-UserTracker-Swift.release.xcconfig */;
 			buildSettings = {
@@ -389,7 +557,7 @@
 			};
 			name = Release;
 		};
-		C481030871AFF185CDC49519C654AF74 /* Debug */ = {
+		B272F3673C82639991C1F8B405EDDD62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9423DC9B0E1D07BE4F84BF8AB96B61FB /* Pods-UserTracker-Swift.debug.xcconfig */;
 			buildSettings = {
@@ -523,6 +691,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B3E855F973BF99CB9839556F465AB0C /* Build configuration list for PBXNativeTarget "TTGSnackbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EB11C9137099969B1694F28FF2374DB /* Debug */,
+				325A71B58E236A0005D5F55D2D5C6AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -532,20 +709,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF6DAE577BEEACA6A9805410E9D21E1B /* Build configuration list for PBXNativeTarget "Pods-UserTracker-Swift" */ = {
+		49593982FDC88D89381EF02AFCF91528 /* Build configuration list for PBXNativeTarget "Pods-UserTracker-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C481030871AFF185CDC49519C654AF74 /* Debug */,
-				BC5E63DABA40DB443FE89902F3BF436B /* Release */,
+				B272F3673C82639991C1F8B405EDDD62 /* Debug */,
+				AA378DE046FCAB0311A7AEDFFA04F1E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C51B12F006B3B1C711A57552D45A817A /* Build configuration list for PBXNativeTarget "Polyline" */ = {
+		C8DD11E2DD94465A9B9B76E49B2D5933 /* Build configuration list for PBXNativeTarget "Polyline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA864791BD43EB1B53969DAE90AE8E3C /* Debug */,
-				B2BC8891944976A1B5FD1975EB521020 /* Release */,
+				191D7F8802E6EA6DAFDFEA68FC56D552 /* Debug */,
+				6686904BB6B7271A3E95DB5359CD17FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

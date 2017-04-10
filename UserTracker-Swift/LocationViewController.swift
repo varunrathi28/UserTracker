@@ -10,9 +10,10 @@ import UIKit
 import MapKit
 import CoreLocation
 
+import TTGSnackbar
+
 class LocationViewController: UIViewController {
 
-    
      let kCurrentLocationIdentifier = "Current"
      let kUserIdentifier = "user"
     var startLocation:CLLocationCoordinate2D?
@@ -28,7 +29,7 @@ class LocationViewController: UIViewController {
     var isStartLocation:Bool = false
     var isEndLocation:Bool = false
     var isTracking :Bool = false
-    var startDate:NSDate?
+    var startDate:Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,31 +79,39 @@ class LocationViewController: UIViewController {
             }
             
            timer.invalidate()
-            showAlert()
+            showSnackBar()
         }
     }
     
     // MARK: - Show Alert
     
-    func showAlert()
+    // Custom Bar
+    func showSnackBar()
     {
-        let alert = UIAlertController(title: "Shift Completed!", message: "Would you like to save this Shift?", preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "Save", style: .default) { action in
-            // perhaps use action.title here
-
-        })
-        
-        alert.addAction(UIAlertAction(title: "Cancel", style:.cancel
-        ) { action in
-            // perhaps use action.title here
-           
-        })
-        
-        present(alert, animated: true) { 
-             self.resetTimer()
-        }
+        let message = getTimeInString()
+        let snackbar = TTGSnackbar(message: "Shift " + message, duration: .long)
+        snackbar.actionText = "Save"
+        snackbar.actionTextColor = UIColor.white
+        snackbar.actionBlock = { (bar) in bar.dismiss() }
+        snackbar.show()
         
     }
+    
+    // Time calculation
+    
+    func getTimeInString()->String
+    {
+       let currentDate = Date()
+        let calender:Calendar = Calendar.current
+        let components: DateComponents = calender.dateComponents([.hour, .minute,.second], from: startDate!, to: currentDate)
+        
+        let hours = components.hour ?? 0
+        let minutes = components.minute ?? 0
+        let seconds = components.second ?? 0
+        let str = "\(hours)h :\(minutes)m :\(seconds)s"
+        return str
+    }
+    
     
     //MARK: - Annotations
     
@@ -112,14 +121,13 @@ class LocationViewController: UIViewController {
       mapView.addAnnotation(annotation)
         
      }
-    
-    
+
     // MARK: - Timer
     
     func startTimer()
     {
         resetTimer()
-        startDate = NSDate()
+        startDate = Date()
         distance = 0
         
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
@@ -201,7 +209,7 @@ extension LocationViewController:CLLocationManagerDelegate
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        if let location = manager.location?.coordinate
+        if (manager.location?.coordinate) != nil
         {
             
             if isStartLocation == false   // First time
@@ -259,8 +267,8 @@ extension LocationViewController : MKMapViewDelegate
         if  overlay is MKPolyline               // we are only using polyline as an overlay
         {
             let renderer = MKPolylineRenderer(overlay: overlay)
-            renderer.strokeColor = UIColor.blue
-            renderer.lineWidth = 5.0
+            renderer.strokeColor = UIColor(red: 101.0/255.0, green: 199.0/255.0, blue: 250.0/255.0, alpha: 0.8)
+            renderer.lineWidth = 4.0
             return renderer
  
         }

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '380188226EF37A6B7F16FA60B81AA879'
-               BlueprintName = 'Polyline'
+               BlueprintIdentifier = '5C0533D58620052E4858E6561ADD34A6'
+               BlueprintName = 'TTGSnackbar'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Polyline.framework'>
+               BuildableName = 'TTGSnackbar.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
