@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LocationViewController" customModule="UserTracker_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XJD-jq-Duh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD9-BF-TaV">
+                                <rect key="frame" x="170" y="597" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="btnStartLocationWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kZT-dv-Cxn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZD9-BF-TaV" secondAttribute="bottom" constant="40" id="41e-5j-NMT"/>
+                            <constraint firstItem="XJD-jq-Duh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="B3L-ZG-65a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XJD-jq-Duh" secondAttribute="bottom" id="GBc-W3-w2f"/>
+                            <constraint firstAttribute="trailing" secondItem="XJD-jq-Duh" secondAttribute="trailing" id="Rr2-09-lhq"/>
+                            <constraint firstItem="XJD-jq-Duh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jPI-NM-O3h"/>
+                            <constraint firstItem="ZD9-BF-TaV" firstAttribute="centerX" secondItem="XJD-jq-Duh" secondAttribute="centerX" id="vlc-FJ-X0q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLocation" destination="ZD9-BF-TaV" id="mIf-Kk-uEo"/>
+                        <outlet property="mapView" destination="XJD-jq-Duh" id="FPk-Jz-HFv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
