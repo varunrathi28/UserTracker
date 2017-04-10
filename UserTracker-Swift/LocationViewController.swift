@@ -30,7 +30,6 @@ class LocationViewController: UIViewController {
     var timer:Timer!
     var isStartLocation:Bool = false
     var isEndLocation:Bool = false
-
     var isTracking :Bool = false
     
     override func viewDidLoad() {
@@ -68,8 +67,7 @@ class LocationViewController: UIViewController {
                 let overlays = self.mapView.overlays
                 mapView.removeOverlays(overlays)
             }
-            
-          // isStartLocation = true
+        
             startTimer()
             
         }
@@ -77,8 +75,11 @@ class LocationViewController: UIViewController {
         {
             btnLocation.isSelected = false
             isTracking = false
-            let lastlocation = userPath[userPath.count - 1]
-            addAnnotation(with: lastlocation.coordinate, title: "Destination")
+            if userPath.count > 1
+            {
+                let lastlocation = userPath[userPath.count - 1]
+                addAnnotation(with: lastlocation.coordinate, title: "End")
+            }
             resetTimer()
             
         }
@@ -121,10 +122,10 @@ class LocationViewController: UIViewController {
     {
         
         locationManager = CLLocationManager()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.delegate = self
         locationManager.activityType = .automotiveNavigation
-        locationManager.distanceFilter = 5
+        locationManager.distanceFilter = 10
         
         // Check location Authorization, and if not ask for Authorized when in use, as it drains less amount of battery
         
@@ -134,7 +135,7 @@ class LocationViewController: UIViewController {
         {
             locationManager.requestAlwaysAuthorization()
         }
-   //     locationManager.startUpdatingHeading()
+        locationManager.startUpdatingHeading()
         locationManager.startUpdatingLocation()
     }
     
@@ -202,19 +203,19 @@ extension LocationViewController:CLLocationManagerDelegate
             
             if isStartLocation == false
             {
-                isStartLocation = true
-                startLocation = location
                 let location:CLLocation? = locations[0]
                 
-                if let location = location
+                if let location = location , isTracking == true
                 {
+                  isStartLocation = true
                   addAnnotation(with: location.coordinate, title: "Start")
+                    startLocation = location.coordinate
                     userPath.append(location)
                 }
                
                 centerMapOnLocation(for: location!)
             }
-            else
+            else if isTracking == true
             {
                 isEndLocation = true
                 
@@ -274,26 +275,7 @@ extension LocationViewController : MKMapViewDelegate
             
         }
         
-//        else if let dequedAnnotation = mapView.dequeueReusableAnnotationView(withIdentifier:kUserIdentifier)
-//        {
-//            annotationView = dequedAnnotation
-//            annotationView?.annotation = annotation
-//            
-//            if isTracking == true
-//            {
-//                
-//                if isEndLocation == true               // source location
-//                {
-//                    
-//                    annotationView?.image = UIImage(named: "current-pin")
-//                }
-//                else if isStartLocation == true                               // destination location
-//                {
-//                    annotationView?.image = UIImage(named: "start-pin")
-//                }
-//            }
-//            
-//        }
+
         else
         {
             if isTracking == true
