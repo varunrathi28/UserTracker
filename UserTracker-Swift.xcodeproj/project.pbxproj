@@ -16,6 +16,7 @@
 		3725EC181E9B6C0100D4EDD8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725EC171E9B6C0100D4EDD8 /* MapKit.framework */; };
 		3725EC1A1E9B6C0600D4EDD8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3725EC191E9B6C0600D4EDD8 /* CoreLocation.framework */; };
 		3725EC1C1E9BA20800D4EDD8 /* CustomUserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725EC1B1E9BA20800D4EDD8 /* CustomUserAnnotation.swift */; };
+		3725EC1E1E9BD21E00D4EDD8 /* ShiftListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725EC1D1E9BD21E00D4EDD8 /* ShiftListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		3725EC171E9B6C0100D4EDD8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3725EC191E9B6C0600D4EDD8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3725EC1B1E9BA20800D4EDD8 /* CustomUserAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUserAnnotation.swift; sourceTree = "<group>"; };
+		3725EC1D1E9BD21E00D4EDD8 /* ShiftListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftListViewController.swift; sourceTree = "<group>"; };
 		8446DDD6A6E3C7928BAF6189 /* Pods_UserTracker_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserTracker_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 			children = (
 				3725EC041E9B6B5E00D4EDD8 /* AppDelegate.swift */,
 				3725EC061E9B6B5E00D4EDD8 /* LocationViewController.swift */,
+				3725EC1D1E9BD21E00D4EDD8 /* ShiftListViewController.swift */,
 				3725EC081E9B6B5E00D4EDD8 /* Main.storyboard */,
 				3725EC0B1E9B6B5F00D4EDD8 /* Assets.xcassets */,
 				3725EC0D1E9B6B5F00D4EDD8 /* LaunchScreen.storyboard */,
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3725EC071E9B6B5E00D4EDD8 /* LocationViewController.swift in Sources */,
+				3725EC1E1E9BD21E00D4EDD8 /* ShiftListViewController.swift in Sources */,
 				3725EC051E9B6B5E00D4EDD8 /* AppDelegate.swift in Sources */,
 				3725EC1C1E9BA20800D4EDD8 /* CustomUserAnnotation.swift in Sources */,
 			);
@@ -398,6 +402,7 @@
 				3725EC151E9B6B5F00D4EDD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,12 +27,19 @@ class LocationViewController: UIViewController {
     var isStartLocation:Bool = false
     var isEndLocation:Bool = false
     
+    var isTracking:Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpLocationManager()
         mapView.delegate = self
+      //  mapView.mapType = .satellite
         mapView.showsUserLocation = true
+        
+        btnLocation.setImage(UIImage(named:"gps"), for: .normal)
+        
+         btnLocation.setImage(UIImage(named:"Stop"), for: .selected)
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -50,11 +57,12 @@ class LocationViewController: UIViewController {
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         
-        if isStartLocation == false
+        if btnLocation.isSelected == false
         {
+            isTracking = true
+            btnLocation.isSelected = true
             if mapView.overlays.count > 0
             {
-            
                 let overlays = self.mapView.overlays
                 mapView.removeOverlays(overlays)
             }
@@ -65,15 +73,17 @@ class LocationViewController: UIViewController {
         }
         else
         {
+            btnLocation.isSelected = false
+            isTracking = false
             isStartLocation = false
-            showTrackOverlay()
-           // resetTimer()
+       //     showTrackOverlay()
+            //resetTimer()
             
         }
         
         
     }
-    
+
     func startTimer()
     {
        
@@ -90,6 +100,8 @@ class LocationViewController: UIViewController {
     {
         timer.invalidate()
         totalTime = 0
+        isStartLocation = false
+        isEndLocation = false
         
     }
     
@@ -109,12 +121,11 @@ class LocationViewController: UIViewController {
         
         let isAuthorized = CLLocationManager.authorizationStatus()
         
-        if isAuthorized == .denied || isAuthorized == .notDetermined
+        if isAuthorized == .notDetermined
         {
             locationManager.requestAlwaysAuthorization()
-            locationManager.requestWhenInUseAuthorization()
         }
-        locationManager.startUpdatingHeading()
+   //     locationManager.startUpdatingHeading()
         locationManager.startUpdatingLocation()
     }
     
@@ -186,21 +197,21 @@ extension LocationViewController:CLLocationManagerDelegate
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-         if let location = manager.location?.coordinate
-         {
+        if let location = manager.location?.coordinate
+        {
             
             if isStartLocation == false
             {
                 isStartLocation = true
                 startLocation = location
-               
+                
                 var startAnnotation:CustomUserAnnotation?
                 
                 let location:CLLocation? = locations[0]
-               
+                
                 if let location = location
                 {
-                   startAnnotation = CustomUserAnnotation(coordinate: location.coordinate, title: "Start")
+                    startAnnotation = CustomUserAnnotation(coordinate: location.coordinate, title: "Start")
                 }
                 mapView.addAnnotation(startAnnotation!)
                 centerMapOnLocation(for: location!)
@@ -208,28 +219,41 @@ extension LocationViewController:CLLocationManagerDelegate
             else
             {
                 isEndLocation = true
-                for aLocation in locations
+                
+                let location  = locations[0]
+                userPath.append(location)
+                
+                let spanX = 0.007
+                let spanY = 0.007
+                
+                var updatedRegion = MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpanMake(spanX, spanY))
+                mapView.setRegion(updatedRegion, animated: true)
+                
+                
+                if userPath.count > 1
                 {
-                   
-                    if userPath.count > 1
-                    {
-                        distance += aLocation.distance(from: userPath.last!)
-                    }
-                    userPath.append(aLocation)
+                    let previousIndex = userPath.count-2
+                    let currentIndex = userPath.count-1
+                    let coord1 = userPath[currentIndex].coordinate
+                    let coord2 = userPath[previousIndex].coordinate
                     
+                    var array = [coord1, coord2]
+                    var polyline = MKPolyline(coordinates: &array, count: array.count)
+                    mapView.add(polyline)
                 }
-            
+                
             }
         }
+        
     }
-    
 }
 
 extension LocationViewController : MKMapViewDelegate
 {
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        
+       
+    
         if  overlay is MKPolyline
         {
             
@@ -239,7 +263,7 @@ extension LocationViewController : MKMapViewDelegate
             return renderer
  
         }
-        return nil
+        return MKPolygonRenderer()
 }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
